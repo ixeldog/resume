@@ -1,0 +1,12 @@
+<div class="col-md-6 wow zoomIn">
+    <div class="advantages-box">
+        <h4>{{skill.title}}</h4>
+        <div class="opacity-box">
+            <p>
+              <span *ngFor="let skill of skill.skills; let isLast=last" >
+                  {{skill}}<span *ngIf="!isLast">,</span>
+              </span>
+            </p>
+        </div>
+    </div>
+</div>

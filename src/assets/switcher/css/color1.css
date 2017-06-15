@@ -1,0 +1,66 @@
+body {
+    color: #082639; }
+
+#page-preloader .spinner:before {
+    border-top-color: #f95231; }
+
+.site-btn {
+    background: #f95231; }
+
+.site-btn.gray-btn {
+    color: #082639; }
+
+.site-btn.gray-btn:hover, .site-btn.gray-btn.hover {
+    -webkit-box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+    box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2); }
+
+.site-btn.gray-btn:active, .site-btn.gray-btn.active {
+    background: #c7c7c7;
+    -webkit-box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2);
+    box-shadow: 10px 10px 20px rgba(37, 37, 37, 0.2); }
+
+.site-btn:hover, .site-btn.hover {
+    -webkit-box-shadow: 10px 10px 20px rgba(249, 82, 49, 0.4);
+    box-shadow: 10px 10px 20px rgba(249, 82, 49, 0.4); }
+
+.site-btn:active, .site-btn.active {
+    background: #cf492f;
+    -webkit-box-shadow: 10px 10px 20px rgba(207, 73, 47, 0.4);
+    box-shadow: 10px 10px 20px rgba(207, 73, 47, 0.4); }
+
+.point:after {
+    color: #f95231; }
+
+.main-menu ul li a:hover {
+    color: #f95231; }
+
+.colored-link:hover, .colored-link:active, .colored-link.hover, .colored-link.active {
+    color: #f95231; }
+
+a.fonts-icons:hover, a.fonts-icons.hover {
+    color: #f95231; }
+
+a.fonts-icons:active, a.fonts-icons.active {
+    color: #f95231; }
+
+.about-row .color-h4 {
+    color: #f95231; }
+
+.portfolio-box:hover .portfolio-name, .portfolio-box.hover .portfolio-name, .portfolio-box:active .portfolio-name, .portfolio-box.active .portfolio-name {
+    color: #f95231; }
+
+.form-wrapper .custom-select-box .custom-select-button:after {
+    color: #f95231; }
+
+.mobile-btn {
+    float: right;
+    margin-top: 12px; }
+
+.mobile-btn > div {
+    background: #f95231; }
+
+.mob-menu-wrapper {
+    background: #f95231; }
+
+.wave-bg .zigzag svg:last-child polyline {
+    stroke: #f95231; }

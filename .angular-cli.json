@@ -9,7 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "media"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -21,7 +22,16 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "js/jquery-2.2.3.min.js",
+        "js/bootstrap.min.js",
+        "js/jquery.placeholder.min.js",
+        "assets/switcher/js/dmss.js",
+        "assets/mixitup-v3/dist/mixitup.min.js",
+        "assets/custom-select/custom-select.js",
+        "js/wow.min.js",
+        "js/theme.js"
+        ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
