@@ -3,7 +3,8 @@
 <!-- Loader end -->
 
 <!-- Start Switcher -->
-<div class="switcher-wrapper">
+<!-- TODO: what does this do? -->
+<!--<div class="switcher-wrapper">
     <div class="demo_changer">
         <div class="demo-icon customBgColor">
             <svg class="fa-magic" viewBox="0 0 24 24">v
@@ -30,7 +31,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- End Switcher -->
 
 <header class="header">
@@ -38,7 +39,7 @@
         <div class="row">
             <div class="col-md-3 col-xs-8 slideInLeft">
                 <div class="logo">
-                    <span class="point">{{firstName}}</span>
+                    <span class="point">ixeldog</span>
                 </div>
             </div>
             <div class="col-md-9 hidden-sm hidden-xs slideInRight">
@@ -77,322 +78,13 @@
 </div>
 <!-- Mobile menu -->
 
-<section id="hello" class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 about-img-wrap">
-                <div class="about-img wow slideInRight duotone-box">
-                    <!--<img src="media/hello-section/image.jpg" alt="">-->
-                    <img src="media/hello-section/profile.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="about-me wow slideInLeft">
-                    <div class="about-me-title">
-                        <!--<h1><span class="point">I am Danny Falcon</span></h1>-->
-                        <h1><span class="point">I am {{firstName}} {{lastName}}</span></h1>
-                    </div>
-                    <div class="about-me-text">
-                        <div class="opacity-box">
-                            <!--<p>I am a Web Developer located in Hartford, Connecticut. I currently work
-                                as a part time Remote Junior Web Developer for Coolor, located in Las
-                                Vegas. I am looking to take on more work and to increase my skills as
-                                a Web Developer.</p>-->
-                            <p>I'm a developer located in Alpharetta, Georgia who has spent the last couple
-                                years doing full stack development on a web application for an electronic
-                                medical records company. I'm currently looking for a remote position,
-                                and would like to work with Angular 4.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about-me-info">
-                        <!--<p>
-                            <span class="span-title">Phone</span>
-                            <span>+1-203-324-5400</span>
-                        </p>-->
-                        <p>
-                            <span class="span-title">Email</span>
-                            <span>ixeldog@gmail.com</span>
-                        </p>
-                        <p>
-                            <span class="span-title">Address</span>
-                            <!--<span>3113 Lochmere Lane, Hartford, CA 06103</span>-->
-                            <span>Alpharetta, GA</span>
-                        </p>
-                        <!--<p>
-                            <span class="span-title">Social</span>
-                            <span>
-                                <a target="_blank" href="https://www.facebook.com/" class="fa fonts-icons fa-facebook"></a>
-                                <a target="_blank" href="https://twitter.com/" class="fa fonts-icons fa-twitter"></a>
-                                <a target="_blank" href="https://www.instagram.com/" class="fa fonts-icons fa-instagram"></a>
-                                <a target="_blank" href="https://www.linkedin.com/" class="fa fonts-icons fa-linkedin"></a>
-                                <a target="_blank" href="https://www.behance.net/" class="fa fonts-icons fa-behance"></a>
-                                <a target="_blank" href="https://dribbble.com/" class="fa fonts-icons fa-dribbble"></a>
-                                <a target="_blank" href="https://medium.com/" class="fa fonts-icons fa-medium"></a>
-                                <a target="_blank" href="https://github.com/" class="fa fonts-icons fa-github"></a>
-                            </span>
-                        </p>-->
-                    </div>
-                    <div class="about-btns">
-                        <a data-toggle="modal" data-target="#contact-modal" href="#" class="site-btn">Contact me</a>
-                        <a href="/download/example.pdf" class="site-btn gray-btn">Download cv</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<hello [firstName]="firstName" [lastName]="lastName"></hello>
 
-<section id="skills" class="section section-small-padding">
-    <div class="container">
-        <div class="row wave-bg">
-            <div class="zigzag wow slideInLeft">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
-                    <g>
-                        <rect class="st0" width="105" height="20"/>
-                        <g>
-                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
-                        </g>
-                    </g>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
-                    <g>
-                        <rect class="st0" width="105" height="20"/>
-                        <g>
-                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-            <div class="col-md-4 wow slideInLeft">
-                <div class="section-sidebar">
-                    <h2><span class="point">Skills</span></h2>
-                    <div class="opacity-box">
-                        <p>I am inspired by creating great work with people who are as passionate as I am about building something awesome.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="row">
-                    <skill *ngFor="let skill of skills" [skill]="skill"></skill>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<skills [skills]="skills"></skills>
 
-<section id="experience" class="section">
-    <div class="container">
-        <div class="row wave-bg">
-            <div class="zigzag wow slideInLeft">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
-                    <g>
-                       <rect class="st0" width="105" height="20"/>
-                        <g>
-                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
-                        </g>
-                    </g>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
-                    <g>
-                        <rect class="st0" width="105" height="20"/>
-                        <g>
-                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-            <div class="col-md-4 wow slideInLeft">
-                <div class="section-sidebar">
-                    <h2><span class="point">Experience</span></h2>
-                    <div class="opacity-box">
-                        <p>I partner with startups, organizations and Fortune 500 companies to build digital products
-                            that help clients overcome challenges and create lasting connections with
-                            millions of people every day.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8 right-box">
+<experience></experience>
 
-                <div class="row wow zoomIn">
-                    <div class="col-md-8">
-                        <div class="about-row">
-                            <h4>Surgical Information Systems</h4>
-                            <h4 class="color-h4">Project Mercury</h4>
-                            <div class="opacity-box">
-                                <p>Designed and developed user-friendly website, including optimized check-out
-                                    page that increased user clicks, and subsequently customer purchases by 20%.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-date">
-                            <p>Fall 2014 — Summer 2017</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row wow zoomIn">
-                    <div class="col-md-8">
-                        <div class="about-row">
-                            <!--<h4>Middle Frontend Developer</h4>-->
-                            <h4 class="color-h4">SIS Com</h4>
-                            <div class="opacity-box">
-                                <p>Leading a small team on a variety of development projects and delivering
-                                    solutions to meet and exceed clients’ briefs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-date">
-                            <!--<p>Jan, 2013 — May, 2014</p>-->
-                            <p>Spring 2009 — Fall 2014</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--<div class="row wow zoomIn">
-                    <div class="col-md-8">
-                        <div class="about-row">
-                            <h4>Web Developer</h4>
-                            <h4 class="color-h4">Coolor Studio</h4>
-                            <div class="opacity-box">
-                                <p>Designed and developed user-friendly website, including optimized check-out
-                                    page that increased user clicks, and subsequently customer purchases by 20%.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-date">
-                            <p>May, 2014 — Present</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row wow zoomIn">
-                    <div class="col-md-8">
-                        <div class="about-row">
-                            <h4>Middle Frontend Developer</h4>
-                            <h4 class="color-h4">Illskill Agency</h4>
-                            <div class="opacity-box">
-                                <p>Leading a small team on a variety of development projects and delivering
-                                    solutions to meet and exceed clients’ briefs.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-date">
-                            <p>Jan, 2013 — May, 2014</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row wow zoomIn">
-                    <div class="col-md-8">
-                        <div class="about-row">
-                            <h4>IT Specialist</h4>
-                            <h4 class="color-h4">Motion Studio</h4>
-                            <div class="opacity-box">
-                                <p>Revamped web application security applications, minimizing hacker
-                                    attacks from 2.3% to 0.02%.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-date">
-                            <p>Dec, 2009 — Jan, 2013</p>
-                        </div>
-                    </div>
-                </div>-->
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="education" class="section">
-    <div class="container">
-        <div class="row wave-bg">
-            <div class="zigzag wow slideInLeft">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
-                    <g>
-                        <rect class="st0" width="105" height="20"/>
-                        <g>
-                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
-                        </g>
-                    </g>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 105 20" xml:space="preserve">
-                    <g>
-                        <rect class="st0" width="105" height="20"/>
-                        <g>
-                            <polyline class="st1" points="2.5,5 16.8,15 31.1,5 45.3,15 59.6,5 73.9,15 88.2,5 102.5,15   "/>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-            <div class="col-md-4 wow slideInLeft">
-                <div class="section-sidebar">
-                    <h2><span class="point">Education</span></h2>
-                    <!--<div class="opacity-box">
-                        <p>All my life I have been driven by my strong belief that education
-                            is important. I try to learn something new every single day.</p>
-                    </div>-->
-                </div>
-            </div>
-            <div class="col-md-8 right-box">
-                <div class="row wow zoomIn">
-                    <div class="col-md-8">
-                        <div class="about-row">
-                            <h4>Southern Polytechnic State University</h4>
-                            <h4 class="color-h4">B.S. in Computer Science</h4>
-                            <!--<div class="opacity-box">
-                                <p>Learn to use App Engine, Google's Platform as a Service, to build the backend for
-                                    web apps that scale not only as your user base grows but as request volumes
-                                    peaks with sudden demand.</p>
-                            </div>-->
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-date">
-                            <p>2004 — 2008</p>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="row wow zoomIn">
-                    <div class="col-md-8">
-                        <div class="about-row">
-                            <h4>Google Developer Training</h4>
-                            <h4 class="color-h4">Google</h4>
-                            <div class="opacity-box">
-                                <p>Learn to use App Engine, Google's Platform as a Service, to build the backend for
-                                    web apps that scale not only as your user base grows but as request volumes
-                                    peaks with sudden demand.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-date">
-                            <p>Apr, 2015 — May, 2015</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row wow zoomIn">
-                    <div class="col-md-8">
-                        <div class="about-row">
-                            <h4>Software Development</h4>
-                            <h4 class="color-h4">Boston University</h4>
-                            <div class="opacity-box">
-                                <p>BSc (Hons) in Software Development. Outstanding Academic Achievement Award.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="about-date">
-                            <p>Jan, 2005 — May, 2009</p>
-                        </div>
-                    </div>
-                </div>-->
-            </div>
-        </div>
-    </div>
-</section>
+<education></education>
 
 <!--
 <section id="portfolio" class="section section-small-padding">
@@ -685,7 +377,7 @@
 </footer>
 
 <!-- Portfolio modal -->
-<div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="portfolio-modal">
+<!--<div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="portfolio-modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content" >
             <div class="modal-body" data-name="patty">
@@ -922,7 +614,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <!-- Portfolio modal -->
 
 <!-- Contact me modal -->
