@@ -25,10 +25,10 @@ export class AppComponent {
 
   skills:Array<SkillModel> = [
     new SkillModel("Frontend Languages",
-      ["TypeScript/Javascript", "SASS/CSS", "HTML"]),
-    new SkillModel("Frontend Tools", ["Angular 1.x", "Angular 4", "Grunt", "NodeJS", "jQuery", "WebStorm", "Visual Studio Code"]),
+      ["TypeScript/JavaScript", "SASS/CSS", "HTML"]),
+    new SkillModel("Frontend Tools", ["Angular 1.x", "Angular 4", "Node.js", "NPM", "Bower", "Grunt", "jQuery", "WebStorm", "Visual Studio Code", "Jenkins"]),
     new SkillModel("Backend Development", ["C#", ".NET 4.5.x", "Web API", "Visual Studio", "Java", "Maven", "Apache Tomcat", "PHP"]),
-    new SkillModel("Database", ["SqlServer", "Oracle", "MySQL"])
+    new SkillModel("Database", ["SQL Server", "Oracle", "MySQL"])
   ];
 }
 
